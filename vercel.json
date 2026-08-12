@@ -1,9 +1,6 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": [
-    { "source": "/", "destination": "/quiz", "permanent": false }
-  ],
   "rewrites": [
     { "source": "/quiz", "destination": "/quiz.html" },
     { "source": "/admin", "destination": "/admin.html" },
