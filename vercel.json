@@ -4,8 +4,6 @@
   "rewrites": [
     { "source": "/quiz", "destination": "/quiz.html" },
     { "source": "/admin", "destination": "/admin.html" },
-    { "source": "/login", "destination": "/login.html" },
-    { "source": "/perfil", "destination": "/profile.html" },
     { "source": "/resultado/iniciante", "destination": "/resultado-iniciante.html" },
     { "source": "/resultado/praticante", "destination": "/resultado-praticante.html" },
     { "source": "/resultado/raiz", "destination": "/resultado-raiz.html" },
