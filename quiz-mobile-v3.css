@@ -1,0 +1,50 @@
+/* Quiz mobile v3 — primeira dobra, polegar e compactação adaptativa */
+:root{--sab:8px}
+@media(max-width:600px){
+  .lesson-header{min-height:54px;height:54px;padding:7px 10px;grid-template-columns:36px 1fr auto;gap:9px}
+  .icon-btn{width:36px;height:36px;font-size:27px}
+  .lesson-progress{height:11px}.heart-counter{font-size:14px;min-width:42px}
+  .lesson-shell{padding:8px 12px calc(12px + env(safe-area-inset-bottom));max-width:100%}
+  #quiz:not(.hidden){display:flex;flex-direction:column;min-height:calc(100dvh - 54px)}
+  .question-top{margin:2px 1px 7px}.category-pill,.timer-pill{padding:6px 9px;font-size:12px;line-height:1.1}
+  .question-card{padding:13px 12px 12px;border-radius:16px;box-shadow:0 2px 0 #dedede}
+  .question-count{font-size:12.5px;line-height:1.25;color:#5f6b64}
+  .question-card h2{font-size:clamp(20px,5.6vw,25px);line-height:1.16;margin:7px 0 12px;letter-spacing:-.012em}
+  .answer-grid{gap:7px}
+  .answer-btn{min-height:52px;padding:8px 10px;border-radius:14px;grid-template-columns:36px 1fr;gap:9px;font-size:15.5px;line-height:1.24;box-shadow:0 2px 0 #d8d8d8}
+  .answer-btn span{width:32px;height:32px;border-radius:9px;font-size:13px}.answer-btn b{font-size:15.5px;line-height:1.24}
+  #checkBtn{min-height:54px;margin:9px 0 0;bottom:calc(6px + env(safe-area-inset-bottom));font-size:16px;border-radius:14px;box-shadow:0 4px 0 var(--gd),0 7px 20px rgba(0,0,0,.11)}
+  #quizError{margin:6px 2px 0;font-size:12.5px}
+  .feedback-panel{margin:8px 0 0;bottom:calc(6px + env(safe-area-inset-bottom));padding:12px;grid-template-columns:38px 1fr;gap:8px;border-radius:16px}
+  .feedback-icon{width:36px;height:36px;font-size:21px}.feedback-panel h3{font-size:17px;margin-bottom:2px}.feedback-panel p{font-size:14px;line-height:1.35}.feedback-panel small{font-size:11.5px}.feedback-panel .game-btn{min-height:50px;margin-top:2px}
+}
+@media(max-width:600px) and (max-height:760px){
+  .lesson-header{min-height:50px;height:50px;padding-top:5px;padding-bottom:5px}
+  .lesson-shell{padding-top:5px}
+  #quiz:not(.hidden){min-height:calc(100dvh - 50px)}
+  .question-top{margin-bottom:5px}.category-pill,.timer-pill{padding:5px 8px}
+  .question-card{padding:10px 10px 9px}.question-card h2{font-size:clamp(19px,5.1vw,23px);margin:5px 0 9px;line-height:1.14}
+  .answer-grid{gap:6px}.answer-btn{min-height:49px;padding:7px 9px;grid-template-columns:34px 1fr;font-size:15px}.answer-btn span{width:30px;height:30px}.answer-btn b{font-size:15px}
+  #checkBtn{min-height:51px;margin-top:7px}
+}
+body.quiz-tight .lesson-header{min-height:50px;height:50px;padding-top:5px;padding-bottom:5px}
+body.quiz-tight .lesson-shell{padding-top:4px}
+body.quiz-tight .question-top{margin-bottom:4px}
+body.quiz-tight .question-card{padding:9px 10px 8px}
+body.quiz-tight .question-card h2{font-size:clamp(19px,5vw,22px);line-height:1.13;margin:4px 0 8px}
+body.quiz-tight .answer-grid{gap:5px}
+body.quiz-tight .answer-btn{min-height:48px;padding:6px 9px;grid-template-columns:33px 1fr;gap:8px;font-size:15px;line-height:1.2}
+body.quiz-tight .answer-btn span{width:30px;height:30px}
+body.quiz-tight .answer-btn b{font-size:15px;line-height:1.2}
+body.quiz-tight #checkBtn{min-height:50px;margin-top:6px}
+body.quiz-ultra .lesson-header{min-height:48px;height:48px}
+body.quiz-ultra .lesson-shell{padding-top:3px;padding-left:10px;padding-right:10px}
+body.quiz-ultra .question-top{margin-bottom:3px}.quiz-ultra .category-pill,.quiz-ultra .timer-pill{padding:4px 7px;font-size:11.5px}
+body.quiz-ultra .question-card{padding:8px 9px 7px;border-radius:14px}
+body.quiz-ultra .question-count{font-size:12px}
+body.quiz-ultra .question-card h2{font-size:18.5px;line-height:1.12;margin:3px 0 7px}
+body.quiz-ultra .answer-grid{gap:4px}
+body.quiz-ultra .answer-btn{min-height:46px;padding:5px 8px;grid-template-columns:31px 1fr;gap:7px;font-size:14.5px;line-height:1.17}
+body.quiz-ultra .answer-btn span{width:28px;height:28px;font-size:12px}.quiz-ultra .answer-btn b{font-size:14.5px;line-height:1.17}
+body.quiz-ultra #checkBtn{min-height:48px;margin-top:5px;font-size:15px}
+@media(min-width:601px){body.quiz-tight .lesson-header,body.quiz-ultra .lesson-header{height:auto}}
