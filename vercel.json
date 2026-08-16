@@ -4,10 +4,10 @@
   "rewrites": [
     { "source": "/quiz", "destination": "/quiz.html" },
     { "source": "/admin", "destination": "/admin.html" },
-    { "source": "/resultado/iniciante", "destination": "/resultado-iniciante.html" },
-    { "source": "/resultado/praticante", "destination": "/resultado-praticante.html" },
-    { "source": "/resultado/raiz", "destination": "/resultado-raiz.html" },
-    { "source": "/resultado/guardiao", "destination": "/resultado-guardiao.html" }
+    { "source": "/resultado/iniciante", "destination": "/resultado-iniciante" },
+    { "source": "/resultado/praticante", "destination": "/resultado-praticante" },
+    { "source": "/resultado/raiz", "destination": "/resultado-raiz" },
+    { "source": "/resultado/guardiao", "destination": "/resultado-guardiao" }
   ],
   "headers": [
     {
@@ -22,6 +22,12 @@
     },
     {
       "source": "/quiz-data.v1.json",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/result-offer.css",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
