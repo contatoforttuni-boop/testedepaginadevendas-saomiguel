@@ -1,3 +1,4 @@
+const resultCss=document.createElement('link');resultCss.rel='stylesheet';resultCss.href='/result-offer.css';document.head.appendChild(resultCss);
 const $=s=>document.querySelector(s);const params=new URLSearchParams(location.search);const token=params.get('t');
 function escapeHtml(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function fmt(s){s=Number(s||0);return `${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`}
