@@ -1,0 +1,6 @@
+/* Acabamento do CTA do quiz no mobile */
+#checkBtn{border:0!important;transition:transform .08s ease,background .12s ease,color .12s ease,box-shadow .12s ease}
+#checkBtn.disabled,#checkBtn:disabled{background:#ececec!important;color:#969696!important;box-shadow:0 2px 0 #d2d2d2!important;cursor:not-allowed}
+#checkBtn.primary:not(:disabled):not(.disabled){background:var(--g)!important;color:#fff!important;box-shadow:0 3px 0 var(--gd),0 5px 12px rgba(70,163,2,.14)!important;cursor:pointer}
+#checkBtn.primary:not(:disabled):not(.disabled):active{transform:translateY(2px);box-shadow:0 1px 0 var(--gd)!important}
+@media(max-width:600px){#checkBtn{min-height:50px!important;border-radius:14px!important}}
