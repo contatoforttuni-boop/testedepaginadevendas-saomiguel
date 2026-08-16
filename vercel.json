@@ -2,6 +2,11 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
+    { "source": "/resultado/play.css", "destination": "/play.css" },
+    { "source": "/resultado/config.js", "destination": "/config.js" },
+    { "source": "/resultado/api.js", "destination": "/api.js" },
+    { "source": "/resultado/result.js", "destination": "/result.js" },
+    { "source": "/resultado/favicon.svg", "destination": "/favicon.svg" },
     { "source": "/quiz", "destination": "/quiz.html" },
     { "source": "/admin", "destination": "/admin.html" },
     { "source": "/resultado/iniciante", "destination": "/resultado-iniciante" },
