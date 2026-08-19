@@ -1,0 +1,84 @@
+/* Ajustes finais mobile-first para as telas alteradas nesta edição */
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+
+/* Início do quiz: conteúdo centralizado, foco em uma única ação */
+#start.start-card{
+  width:min(100%,420px);
+  margin:0 auto;
+  padding:22px 16px 18px;
+  text-align:center;
+}
+#start .mascot{margin-left:auto;margin-right:auto}
+#start .eyebrow,#start h1,#start>p{display:block;text-align:center}
+#start h1{max-width:340px;margin-left:auto;margin-right:auto}
+#start>p{max-width:330px;margin-left:auto;margin-right:auto}
+#start .lesson-info{justify-content:center;margin-left:auto;margin-right:auto}
+#start #startForm{width:100%;max-width:360px;margin:18px auto 0;text-align:center}
+#start .input-grid{display:block;width:100%}
+#start .input-grid label{display:grid;gap:7px;text-align:center;width:100%}
+#start .input-grid label>span{display:block;text-align:center;font-weight:800}
+#start .input-grid input{
+  width:100%;
+  min-height:54px;
+  padding:0 16px;
+  text-align:center;
+  font-size:16px;
+  border-radius:14px;
+}
+#start #startError{min-height:18px;text-align:center;margin:8px auto 0}
+#start .game-btn{width:100%;min-height:54px;margin-top:8px;border-radius:14px}
+
+/* Acesso pago: somente e-mail, tudo centralizado */
+#gate.gate-card{
+  width:min(100%,430px);
+  margin:clamp(22px,7vh,64px) auto 0;
+  padding:24px 16px 20px;
+  text-align:center;
+}
+#gate .seal{margin-left:auto;margin-right:auto}
+#gate h1{max-width:360px;margin-left:auto;margin-right:auto}
+#gate>p{max-width:350px;margin-left:auto;margin-right:auto}
+#gate #accessForm{width:100%;max-width:360px;margin:0 auto;text-align:center;display:grid;gap:10px}
+#gate #accessForm label{display:grid;gap:7px;text-align:center;width:100%}
+#gate #accessForm input{
+  width:100%;
+  min-height:54px;
+  padding:0 14px;
+  text-align:center;
+  font-size:16px;
+  border-radius:14px;
+}
+#gate .form-error{text-align:center;min-height:18px}
+#gate .cta{width:100%;min-height:54px}
+#gate small{max-width:330px;margin-left:auto;margin-right:auto;line-height:1.4}
+
+/* Mobile seguro para notch e barras do navegador */
+@media(max-width:600px){
+  .lesson-shell{width:100%;padding-left:12px!important;padding-right:12px!important;padding-bottom:calc(16px + env(safe-area-inset-bottom))!important}
+  #start.start-card{margin-top:8px;padding:20px 14px 16px;border-radius:18px}
+  #start h1{font-size:clamp(28px,8.8vw,36px);line-height:1.04}
+  #start>p{font-size:14px;line-height:1.4}
+  #start .lesson-info{display:flex;flex-wrap:wrap;gap:7px 9px}
+  #start .lesson-info span{white-space:nowrap}
+  .access-head{height:auto;min-height:56px;padding:8px 12px;padding-top:calc(8px + env(safe-area-inset-top))}
+  .access-head .brand{font-size:14px}
+  .access-head .secure{font-size:9px}
+  .access-shell{width:100%;padding:12px 12px calc(28px + env(safe-area-inset-bottom))}
+  #gate.gate-card{margin-top:18px;padding:22px 14px 18px;border-radius:18px}
+  #gate .seal{width:62px;height:62px;border-radius:18px;font-size:30px;margin-bottom:14px}
+  #gate h1{font-size:clamp(28px,8.5vw,36px);line-height:1.04}
+  #gate>p{font-size:14px;line-height:1.45;margin-bottom:18px}
+  #gate #accessForm input{min-height:56px}
+  #gate .cta{min-height:56px;font-size:15px}
+}
+
+@media(max-width:360px){
+  #start.start-card,#gate.gate-card{padding-left:12px;padding-right:12px}
+  #start h1,#gate h1{font-size:27px}
+  #start .lesson-info{font-size:12px}
+}
+
+@media(min-width:601px){
+  #start.start-card{padding:30px 28px 26px}
+  #gate.gate-card{padding:30px 24px 26px}
+}
