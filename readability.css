@@ -1,0 +1,64 @@
+/* Legibilidade global: prioridade mobile e público com maior dificuldade visual */
+html{font-size:16px!important;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{line-height:1.55!important}
+button,input,select,textarea,a{font-family:inherit}
+button,.cta,.game-btn,.btn,.mini-cta{font-size:16px!important;line-height:1.25!important}
+input,select,textarea{font-size:18px!important;line-height:1.4!important;min-height:54px}
+p,li,label,.muted{font-size:16px!important;line-height:1.55!important}
+small{font-size:13px!important;line-height:1.45!important}
+.eyebrow,.kicker,.question-count,.category-pill,.timer-pill,.secure{font-size:13px!important;line-height:1.35!important}
+h1{line-height:1.08!important}
+h2,h3{line-height:1.2!important}
+
+/* Quiz principal */
+#questionText,.question-card h2{font-size:clamp(25px,7vw,32px)!important;line-height:1.3!important;letter-spacing:-.015em!important}
+.answer-btn,.adv-option{min-height:64px!important;padding:15px 16px!important;text-align:left!important}
+.answer-btn b,.adv-option b{font-size:18px!important;line-height:1.4!important;font-weight:800!important}
+.answer-btn span,.adv-option span{font-size:16px!important}
+#feedbackTitle{font-size:22px!important}
+#feedbackText{font-size:17px!important;line-height:1.5!important}
+#referenceText{font-size:14px!important;line-height:1.45!important}
+.lesson-info span{font-size:14px!important}
+.start-card label>span{font-size:16px!important}
+
+/* Prova avançada */
+#advPrompt{font-size:clamp(24px,6.8vw,31px)!important;line-height:1.3!important}
+#advCount,#advCategory{font-size:14px!important}
+.correction b{font-size:17px!important;line-height:1.4!important}
+.correction p{font-size:16px!important}
+
+/* Resultado/oferta */
+.score-number,.score-value,.result-score{font-size:clamp(44px,13vw,68px)!important;line-height:1!important}
+.offer-copy,.result-copy,.result-lead{font-size:17px!important;line-height:1.55!important}
+
+/* Área paga / passaporte */
+.welcome p,.panel p,.review-body p,.route-day p,.advanced-copy p{font-size:16px!important;line-height:1.55!important}
+.panel-title h2,.advanced-copy h2{font-size:23px!important;line-height:1.25!important}
+.review-item summary b{font-size:17px!important;line-height:1.45!important}
+.category-row span,.category-row b{font-size:15px!important}
+.route-day strong{font-size:16px!important}
+.metric-card strong{font-size:32px!important}
+.metric-card span{font-size:14px!important}
+
+@media(max-width:480px){
+  html{font-size:17px!important}
+  body{line-height:1.6!important}
+  p,li,label,.muted{font-size:17px!important}
+  small{font-size:14px!important}
+  .cta,.game-btn,.btn{min-height:58px!important;font-size:17px!important}
+  input,select,textarea{font-size:18px!important;min-height:56px!important}
+  #questionText,.question-card h2{font-size:27px!important;line-height:1.32!important}
+  .answer-btn,.adv-option{min-height:68px!important;padding:16px!important}
+  .answer-btn b,.adv-option b{font-size:19px!important;line-height:1.42!important}
+  #feedbackText{font-size:17px!important}
+  #advPrompt{font-size:26px!important;line-height:1.32!important}
+  .panel-title h2,.advanced-copy h2{font-size:22px!important}
+  .review-item summary b{font-size:17px!important}
+}
+
+@media(max-width:360px){
+  html{font-size:16px!important}
+  p,li,label,.muted{font-size:16px!important}
+  #questionText,.question-card h2,#advPrompt{font-size:24px!important}
+  .answer-btn b,.adv-option b{font-size:18px!important}
+}
